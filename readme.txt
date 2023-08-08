@@ -51,7 +51,7 @@ We welcome contributions to the "Visualizing the Unseen" project! If you have id
 
 ## Contact
 
-For questions or feedback, please contact us at [Zabi Ulla Ismail](imzabi32@gmail.com) .
+For questions or feedback, please contact us at [Zabi Ulla Ismail](imzabi32@gmail.com).
 
 Let's work together to create a more inclusive and accessible visual experience! 🌟📸🔍
 
