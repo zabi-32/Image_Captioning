@@ -3,7 +3,6 @@ from PIL import Image
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.xception import Xception
-from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from pickle import load
 import argparse
@@ -15,7 +14,7 @@ import argparse
 # img_path = args['image']
 
 # Instead, specify the image path directly
-img_path = '/Users/faiziabkhan/Desktop/Christ University/SEM 3/Specialization Project/Image Captioning/flicker 8k/Image Captioning/test images/test21.jpeg'  # Replace 'path_to_your_image.jpg' with your image file path
+img_path = '/Users/faiziabkhan/Developer/Image_Captioning/test images/test11.png'  # Replace 'path_to_your_image.jpg' with your image file path
 
 
 def extract_features(filename, model):
@@ -57,7 +56,7 @@ def generate_desc(model, tokenizer, photo, max_length):
 
 # Load your tokenizer and model (change the paths accordingly)
 tokenizer = load(open("tokenizer.p", "rb"))
-model = load_model('models/model_19.h5')
+model = load_model('/Users/faiziabkhan/Developer/Image_Captioning/models/With Attention/attention_model_12.h5')
 xception_model = Xception(include_top=False, pooling="avg")
 
 photo = extract_features(img_path, xception_model)
